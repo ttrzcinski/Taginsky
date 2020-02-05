@@ -13,8 +13,11 @@ public class VersionUtil {
      * @param build passed build number
      * @return created version tag
      */
-    public static String asVersion(int major, int minor, int build) {
-        return String.format("%s.%d.%d.", major, minor, build);
+    public static String asVersion(Integer major, Integer minor, Integer build) {
+        int valMajor = major != null ? Math.abs(major) : 0;
+        int valMinor = minor != null ? Math.abs(minor) : 0;
+        int valBuild = build != null ? Math.abs(build) : 0;
+        return String.format("%s.%d.%d", valMajor, valMinor, valBuild);
     }
 
     /**
