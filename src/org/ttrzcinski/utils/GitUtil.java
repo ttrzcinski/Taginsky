@@ -1,0 +1,18 @@
+package org.ttrzcinski.utils;
+
+public class GitUtil {
+
+    // TODO IS CURRENT DIRECTORY A REPO
+
+    // TODO IS POINTED DIRECTORY PROJECT A REPO
+
+    // TODO INIT GIT REPO
+
+    // TODO READ ALL THE TAGS FROM REPO
+
+    // TODO ADD TAG TO REPO
+
+    // TODO CHECK, IF REPO IS TAGGED WITH TAG
+
+    // TODO INCREMENT AND OVERWRITE TAG
+}
