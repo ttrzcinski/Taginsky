@@ -1,5 +1,7 @@
 package org.ttrzcinski;
 
+import org.ttrzcinski.utils.TagBuilder;
+
 public class Main {
 
     public static void main(String[] args) {
