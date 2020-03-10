@@ -1,9 +1,10 @@
 package org.ttrzcinski.utils;
 
+import org.ttrzcinski.dictionaries.DateWithTime;
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
-import org.ttrzcinski.dictionaries.DateWithTime;
 
 public class TimeUtil {
 

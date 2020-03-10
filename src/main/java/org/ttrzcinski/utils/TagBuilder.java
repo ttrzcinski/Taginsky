@@ -1,12 +1,10 @@
-package org.ttrzcinski;
+package org.ttrzcinski.utils;
+
+import org.ttrzcinski.dictionaries.Binding;
+import org.ttrzcinski.dictionaries.DateWithTime;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.ttrzcinski.dictionaries.Binding;
-import org.ttrzcinski.dictionaries.DateWithTime;
-import org.ttrzcinski.utils.TimeUtil;
-import org.ttrzcinski.utils.UUIDUtil;
-import org.ttrzcinski.utils.VersionUtil;
 
 /**
  * Builder of version tag.
