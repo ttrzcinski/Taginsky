@@ -1,4 +1,7 @@
-# Taginsky
+#  (\____/)
+# ( ͡ ͡° ͜ ʖ ͡ ͡°)  Taginsky
+# \╭☞ \╭☞
+#
 Creates version tags for CI/CD pipelines and builds.
 
 JAVA APPLICATION working as CI/CD versioning module.
