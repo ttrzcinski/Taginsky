@@ -1,7 +1,7 @@
 # Taginsky
 
  (\____/)
-( ͡ ͡° ͜ ʖ ͡ ͡°)  
+ ( ͡ ͡° ͜ ʖ ͡ ͡°)  
  \╭☞ \╭☞  Tags-maker..
 
 Creates version tags for CI/CD pipelines and builds.
