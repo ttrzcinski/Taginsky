@@ -1,7 +1,9 @@
-#  (\____/)
-# ( ͡ ͡° ͜ ʖ ͡ ͡°)  Taginsky
-# \╭☞ \╭☞
-#
+# Taginsky
+
+ (\____/)
+( ͡ ͡° ͜ ʖ ͡ ͡°)  
+ \╭☞ \╭☞  Tags-maker..
+
 Creates version tags for CI/CD pipelines and builds.
 
 JAVA APPLICATION working as CI/CD versioning module.
