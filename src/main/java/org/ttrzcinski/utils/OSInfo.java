@@ -1,5 +1,7 @@
 package org.ttrzcinski.utils;
 
+import lombok.experimental.UtilityClass;
+
 import java.awt.*;
 import java.nio.file.Paths;
 
@@ -12,13 +14,8 @@ import java.nio.file.Paths;
  * @version %I% from %G%
  * @since 1.12
  */
+@UtilityClass
 public final class OSInfo {
-
-    /**
-     * Hidden constructor - there is not point to initialize an instance.
-     */
-    private OSInfo() {
-    }
 
     /**
      * Checks directory by checking current relative path. "\" - Windows-based "/" - *nux based
