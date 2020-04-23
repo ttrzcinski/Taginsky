@@ -1,6 +1,7 @@
 package org.ttrzcinski.utils;
 
 import lombok.experimental.UtilityClass;
+import org.ttrzcinski.utils.ParamCheck;
 
 import java.awt.*;
 import java.nio.file.Paths;

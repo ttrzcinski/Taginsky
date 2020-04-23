@@ -16,7 +16,7 @@
         <maven.compiler.version>3.8.1</maven.compiler.version>
         <maven.compiler.release>11</maven.compiler.release>
         <my.lombok.version>1.18.12</my.lombok.version>
-        <my.junit.version>5.6.2</my.junit.version>
+        <my.junit.version>[5.4.0,5.6.3)</my.junit.version>
         <pitest.version>1.5.1</pitest.version>
         <surefire.version>3.0.0-M4</surefire.version>
         <pitest.junit5.version>0.12</pitest.junit5.version>
@@ -65,13 +65,20 @@
             <version>${pitest.version}</version>
             <type>pom</type>
         </dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-failsafe-plugin -->
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-failsafe-plugin</artifactId>
+            <version>3.0.0-M4</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
         <sourceDirectory>src</sourceDirectory>
         <testSourceDirectory>test</testSourceDirectory>
         <plugins>
-            <!-- Run as Java 14 -->
+            <!-- Run as Java 13 -->
             <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
             <plugin>
                 <!--<groupId>org.apache.maven.plugins</groupId>-->
@@ -94,24 +101,32 @@
             </plugin>
             <plugin>
                 <artifactId>maven-failsafe-plugin</artifactId>
+                <version>${surefire.version}</version>
                 <configuration>
                     <argLine>--enable-preview</argLine>
                 </configuration>
             </plugin>
-            <plugin>
-                <!--<groupId>org.apache.maven.plugins</groupId>-->
+            <!--<plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <source>${maven.compiler.source}</source>
                     <target>${maven.compiler.target}</target>
                 </configuration>
-            </plugin>
+            </plugin>-->
             <!-- Mutation tests with PiTest via JUnit5 -->
             <plugin>
                 <!-- https://mvnrepository.com/artifact/org.pitest/pitest-maven -->
                 <groupId>org.pitest</groupId>
                 <artifactId>pitest-maven</artifactId>
                 <version>${pitest.version}</version>
+
+                <!--<reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>report</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>-->
 
                 <executions>
                     <execution>
@@ -131,6 +146,7 @@
                         <groupId>org.pitest</groupId>
                         <artifactId>pitest-junit5-plugin</artifactId>
                         <version>${pitest.junit5.version}</version>
+
                     </dependency>
                 </dependencies>
                 <configuration>
@@ -140,6 +156,9 @@
                     <targetTests>
                         <param>org.ttrzcinski.utils.*</param>
                     </targetTests>
+                    <jvmArgs>
+                        --enable-preview
+                    </jvmArgs>
                 </configuration>
             </plugin>
         </plugins>

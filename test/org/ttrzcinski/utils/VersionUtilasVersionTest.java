@@ -3,8 +3,9 @@ package org.ttrzcinski.utils;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.ttrzcinski.utils.VersionUtil;
 
-public class VersionUtil_asVersionTest {
+public class VersionUtilasVersionTest {
 
     @Test
     void asVersion_nulls() {

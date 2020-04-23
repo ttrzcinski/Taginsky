@@ -1,5 +1,7 @@
 package org.ttrzcinski.utils;
 
+import org.ttrzcinski.utils.OSInfo;
+
 import java.nio.file.InvalidPathException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
